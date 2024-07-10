@@ -16,8 +16,8 @@ spring:
   # (Deployment로 배포한 Pod는 고유 주소가 생기지 않기 때문임)
   eureka:
     instance:
-      hostname: ${SERVER_HOST:localhost}
-      instanceId: ${SERVER_HOST:localhost}
+      hostname: ${HOSTNAME:localhost}
+      instanceId: ${HOSTNAME:localhost}
       preferIpAddress: true
       nonSecurePort: ${SERVER_PORT:19080}
       securePort: 443

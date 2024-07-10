@@ -17,8 +17,8 @@ spring:
 
 eureka:
   instance:
-    hostname: ${HOSTNAME:localhost}
-    instanceId: ${HOSTNAME:localhost}
+    hostname: ${SERVER_HOST:localhost}
+    instanceId: ${SERVER_HOST:localhost}
     preferIpAddress: true
     nonSecurePort: ${SERVER_PORT:19080}
     securePort: 443
